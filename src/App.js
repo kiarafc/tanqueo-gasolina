@@ -7,6 +7,9 @@ import { CargarSaldo} from './componentes/CargarSaldo.jsx';
 import { HistorialMovimiento } from './componentes/HistorialMovimiento.jsx';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import { Home } from './componentes/Home.jsx'
+import { Disponibilidad } from './componentes/Disponibilidad.jsx'
+import { TanquearVehiculo } from './componentes/TanquearVehiculo';
+import { GestionarUsuarios } from './componentes/GestionarUsuarios';
 
 function App() {
   return (<>
@@ -16,6 +19,9 @@ function App() {
         <Route path="/Tanquear" element={<TanquearCarro />}/>
         <Route path="/CargarSaldo" element={<CargarSaldo />}/>
         <Route path="/Movimientos" element={<HistorialMovimiento/>}/>
+        <Route path="/Disponibilidad" element={<Disponibilidad/>} />
+        <Route path="/Tanquear/Vehiculo" element={<TanquearVehiculo/>} />
+        <Route path="/Gestionar/Usuarios" element={<GestionarUsuarios/>} />
       </Routes>
     </BrowserRouter>
   </>
