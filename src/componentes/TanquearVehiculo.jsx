@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 export function TanquearVehiculo(){
   let navigate = useNavigate();
-  return (<Fragment>
+  return (<Fragment> 
     <header className="App-header">
       <h1>
         Tanquear Vehículo

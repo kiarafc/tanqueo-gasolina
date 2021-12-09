@@ -1,12 +1,6 @@
 import React, {Fragment} from 'react';
 import { Link } from 'react-router-dom';
 import {Form, Col, Row, Button } from 'react-bootstrap';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import Nav from 'react-bootstrap/Nav';
-import FormControl from 'react-bootstrap/FormControl';
 
 
 export function Home(){
@@ -37,7 +31,16 @@ export function Home(){
         </Form.Group>
         <Form.Group as={Col} controlId="formGridGestionar">
             <Link to="/Gestionar/Usuarios">Gestionar usuarios</Link>
-        </Form.Group>            
+        </Form.Group>
+        <Form.Group as={Col} controlId="formGridGestionar">
+            <Link to="">Ver gasolina (usuario externo)</Link>
+        </Form.Group>   
+        <Form.Group as={Col} controlId="formGridGestionar">
+            <Link to="/Perfil">Perfil (usuario interno)</Link>
+        </Form.Group>   
+        <Form.Group as={Col} controlId="formGridGestionar">
+            <Link to="/Precio">Gestionar precios</Link>
+        </Form.Group>               
     </Row>
 </Fragment>
 );
