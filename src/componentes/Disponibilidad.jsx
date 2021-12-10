@@ -1,22 +1,35 @@
 import React, {Fragment} from 'react';
 import {Table, Form, Button, Col} from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import {Link} from "react-router-dom";
 
 export function Disponibilidad(){
     let navigate = useNavigate();
     return(<Fragment>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container-fluid">
+            <Link className="nav-link active" to="/Perfil" >Perfil</Link>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div className="navbar-nav mx-auto">
+                    <Link className="nav-link" to="/Precio">Precios</Link>
+                    <Link className="nav-link" to="/Disponibilidad">Disponibilidad</Link>
+                    <Link className="nav-link" to="/Tanquear/Vehiculo">Tanquear Vehículo </Link>
+                    <Link className="nav-link" to="/GestionarUsuarios">Gestión de usuarios</Link>                    
+                </div>
+            </div>
+        </div>
+    </nav>
     <header className="App-header">
       <h1>
         Disponibilidad de Gasolina
       </h1>
     </header>
     <br/>
-    <Button variant="primary" type="submit" style={{'alignSelf':'Grid'}} onClick={() => navigate('../')}>
-      Regresar
-    </Button>
-    <Form.Group as={Col} controlId="formGridInventario">
-        <br /><Form.Label className="text-left">Inventario </Form.Label>
-    </Form.Group>
+    <h3>Inventario</h3>
+    <br />
     <Table responsive= "md" striped bordered hover variant="light" size="sm-2">
         <thead>
             <tr>

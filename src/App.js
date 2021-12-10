@@ -9,15 +9,15 @@ import { Home } from './componentes/Home.jsx'
 import { Disponibilidad } from './componentes/Disponibilidad.jsx'
 import { TanquearVehiculo } from './componentes/TanquearVehiculo';
 import { GestionarUsuarios } from './componentes/GestionarUsuarios';
-import HomeInterno  from './componentes/HomeInterno';
 import Perfil from './componentes/Perfil';
 import Precio from './componentes/Precio';
+import PerfilExterno from './componentes/PerfilExterno';
+import Vergasolina from './componentes/Vergasolina';
 
 function App() {
   return (<>
     <BrowserRouter>
       <Routes>
-        <Route path="/home" element={<HomeInterno />}/>
         <Route path="/" element={<Home/>}/>
         <Route path="/Tanquear" element={<TanquearCarro />}/>
         <Route path="/CargarSaldo" element={<CargarSaldo />}/>
@@ -29,6 +29,8 @@ function App() {
         <Route path="/Precio" element={<Precio/>}/>
         <Route path="/Disponibilidad"element={<Disponibilidad/>}/>
         <Route path="/GestionarUsuarios" element={<GestionarUsuarios/>}/>
+        <Route path="/Perfil/Externo"  element={<PerfilExterno/>}/>
+        <Route path="/Gasolina"  element={<Vergasolina/>}/>
       </Routes>
     </BrowserRouter>
   </>

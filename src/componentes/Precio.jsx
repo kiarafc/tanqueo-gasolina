@@ -4,6 +4,7 @@ import {useState,Fragment} from 'react';
 import { nanoid } from "nanoid";
 import ReadOnlyRow from './ReadOnlyRow';
 import EditableRow from './EditableRow';
+import {Link} from "react-router-dom";
 
 //import ReadOnlyRow from "./components/ReadOnlyRow";
 //import  EditableRow  from './components/EditableRow'
@@ -124,14 +125,32 @@ export default function Precio() {
     };
 
 
-
     return (
-
-        <> <header >
-        <h3>
-          Gestionar Precios
-        </h3>
-      </header>
+        
+        <> 
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container-fluid">
+            <Link className="nav-link active" to="/Perfil" >Perfil</Link>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div className="navbar-nav mx-auto">
+                    <Link className="nav-link" to="/Precio">Precios</Link>
+                    <Link className="nav-link" to="/Disponibilidad">Disponibilidad</Link>
+                    <Link className="nav-link" to="/Tanquear/Vehiculo">Tanquear Vehículo </Link>
+                    <Link className="nav-link" to="/GestionarUsuarios">Gestión de usuarios</Link>                    
+                </div>
+            </div>
+        </div>
+        </nav>
+        <br />
+        <header >
+            <h3>
+            Gestionar Precios
+            </h3>
+        </header>
+        
         <div class="container p-5 text-center ">
             <div class="abs-center">
                 <form className="form-horizontal" onSubmit={handleAddFormSubmit}>
