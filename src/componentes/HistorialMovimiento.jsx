@@ -17,7 +17,8 @@ export function HistorialMovimiento(){
                             <Link className="nav-link" to="/Tanquear">Tanquear</Link>
                             <Link className="nav-link" to="/CargarSaldo">Saldo</Link>
                             <Link className="nav-link" to="/Movimientos">Movimientos</Link>
-                            <Link className="nav-link" to="/Gasolina">Ver gasolina</Link>                    
+                            <Link className="nav-link" to="/Gasolina">Ver gasolina</Link>   
+                            <Link className="nav-link" to="/Modificar">Editar vehículos</Link>                 
                         </div>
                     </div>
                     <Link className="nav-link active" to="/" >Inicio</Link>

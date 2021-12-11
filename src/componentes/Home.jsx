@@ -22,8 +22,11 @@ export function Home(){
                         </div>
                     </div>
                 </div>
-            </nav>
-    <br/>
+            </nav>            
+        <br/>
+        <div>
+            <link rel="stylesheet" href="/" />
+        </div>
 </Fragment>
 );
 };

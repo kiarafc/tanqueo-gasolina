@@ -13,6 +13,11 @@ import Perfil from './componentes/Perfil';
 import Precio from './componentes/Precio';
 import PerfilExterno from './componentes/PerfilExterno';
 import Vergasolina from './componentes/Vergasolina';
+import Registro from './componentes/Registro';
+import Recuperar from './componentes/Recuperar';
+//import Comentarios from './componentes/Comentarios'; 
+        //<Route path="/comentarios" element={<Comentarios />}/>
+import {Modificar} from './componentes/Modificar';
 
 function App() {
   return (<>
@@ -31,6 +36,9 @@ function App() {
         <Route path="/GestionarUsuarios" element={<GestionarUsuarios/>}/>
         <Route path="/Perfil/Externo"  element={<PerfilExterno/>}/>
         <Route path="/Gasolina"  element={<Vergasolina/>}/>
+        <Route path="/Registro" element={<Registro />}/>
+        <Route path="/producto/lista" element={<Recuperar />}/>
+        <Route path="/Modificar" element={<Modificar />}/>
       </Routes>
     </BrowserRouter>
   </>

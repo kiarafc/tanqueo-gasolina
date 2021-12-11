@@ -5,6 +5,11 @@ import {Link} from "react-router-dom";
 const Perfil = () => {
     return (
         <div className="app">
+            <header className="App-header">
+          <h1>
+            Tanqueo de Gasolina
+          </h1>
+        </header>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
                 <Link className="nav-link active" to="/Perfil" >Perfil</Link>

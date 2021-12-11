@@ -4,6 +4,11 @@ import {Link} from "react-router-dom";
 const PerfilExterno = () => {
     return (
         <div className="app">
+            <header className="App-header">
+          <h1>
+            Tanqueo de Gasolina
+          </h1>
+        </header>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
                 <Link className="nav-link active" to="/Perfil/Externo" >Perfil</Link>
@@ -15,7 +20,8 @@ const PerfilExterno = () => {
                             <Link className="nav-link" to="/Tanquear">Tanquear</Link>
                             <Link className="nav-link" to="/CargarSaldo">Saldo</Link>
                             <Link className="nav-link" to="/Movimientos">Movimientos</Link>
-                            <Link className="nav-link" to="/Gasolina">Ver gasolina</Link>                    
+                            <Link className="nav-link" to="/Gasolina">Ver gasolina</Link>   
+                            <Link className="nav-link" to="/Modificar">Editar vehículos</Link>                  
                         </div>
                     </div>
                     <Link className="nav-link active" to="/" >Inicio</Link>
