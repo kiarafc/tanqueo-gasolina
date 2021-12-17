@@ -1,10 +1,8 @@
 import React, {Fragment} from 'react';
-import {Table, Form, Button, Col} from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import {Table, Form, Col} from 'react-bootstrap';
 import {Link} from "react-router-dom";
 
 export function HistorialMovimiento(){
-    let navigate = useNavigate();
     return(<Fragment>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">

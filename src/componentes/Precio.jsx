@@ -144,8 +144,7 @@ export default function Precio() {
             </div>
         </div>
         </nav>
-        <br />
-        <header >
+        <header className="App-header">
             <h3>
             Gestionar Precios
             </h3>
@@ -156,9 +155,7 @@ export default function Precio() {
                 <form className="form-horizontal" onSubmit={handleAddFormSubmit}>
                     <div className="form-group">
                         <label htmlFor="startdate" className="form-label m-1">Rango de fecha</label>
-                        <input
-                            
-                           
+                        <input                       
                             type="date"
                             required="required"
                             name="start"
