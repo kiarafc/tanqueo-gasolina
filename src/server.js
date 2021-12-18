@@ -17,6 +17,6 @@ mongoose.connect(process.env.URL_DATABASE)
     .then(res => console.log("Conectado a BD"))
     .catch(error => console.log(error));
 
-app.listen(8080, () => {
-    console.log("Servidor escuchando en el puerto 8080...")
+app.listen(3000, () => {
+    console.log("Servidor escuchando en el puerto 3000...")
 })
