@@ -11,6 +11,9 @@ app.use(express.json()); //Middleware para convertir a JSON
 
 app.use("/producto", productoRutas);
 app.use("/user", userRutas);
+//APIs
+app.use("/user", userRutas);
+
 //Conecta a la BD
 mongoose.connect(process.env.URL_DATABASE)
     .then(res => console.log("Conectado a BD"))
