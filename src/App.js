@@ -15,8 +15,6 @@ import PerfilExterno from './componentes/PerfilExterno';
 import Vergasolina from './componentes/Vergasolina';
 import Registro from './componentes/Registro';
 import Recuperar from './componentes/Recuperar';
-//import Comentarios from './componentes/Comentarios'; 
-        //<Route path="/comentarios" element={<Comentarios />}/>
 import {Modificar} from './componentes/Modificar';
 
 function App() {
